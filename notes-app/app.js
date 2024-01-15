@@ -1,8 +1,8 @@
 const getNotes = require('./notes.js')
+const yargs = require('yargs')
 const chalk = require('chalk')
-const validator  = require('validator')
-const msg = getNotes()
 
-console.log(msg)
-console.log(validator.isEmail('prath@example.com'))
-console.log(chalk.green("Success"))
+const command = process.argv[2]
+
+console.log(process.argv)
+console.log(yargs.argv)
